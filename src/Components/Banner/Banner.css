@@ -1,0 +1,83 @@
+/* General Banner Styling */
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .banner-left {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 2rem;
+  }
+  
+  .banner-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-left h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .banner-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .banner-left a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .banner-left a:hover {
+    text-decoration: underline;
+  }
+  
+  .banner-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .banner-wrapper {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .banner-left {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .banner-right {
+      max-width: 100%;
+    }
+  
+    .banner-left h1 {
+      font-size: 2rem;
+    }
+  
+    .banner-left p {
+      font-size: 1rem;
+    }
+  }
+  

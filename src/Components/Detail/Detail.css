@@ -1,0 +1,58 @@
+/* General container for the detail section */
+.detail-section {
+    max-width: 900px;
+    margin: 40px 86px;
+    padding: 30px;
+    
+    border-radius: 8px;
+    
+ 
+  }
+  
+  /* Heading Style */
+  .detail-section h1 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Paragraph Style */
+  .detail-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  /* Bold Text within Paragraph */
+  .detail-section b {
+    font-weight: 700;
+    color: #D94B39;  /* Subtle color to highlight important text */
+  }
+  
+  /* Adding subtle animation to the text */
+  .detail-section h1, .detail-section p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Adding a hover effect for the entire detail section */
+  .detail-section:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  

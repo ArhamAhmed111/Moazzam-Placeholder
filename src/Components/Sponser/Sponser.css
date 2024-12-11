@@ -1,0 +1,72 @@
+/* General Sponser Section Styling */
+.sponser-section {
+    /* background-color: #f9f9f9;  */
+    padding: 3rem 2rem;
+    /* text-align: center; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    margin: 3rem 86px;
+    max-width: 1200px; /* Max width for the section */
+  }
+  
+  .sponser-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .sponser-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* .sponsor-logos {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column; 
+  margin-top: 2rem; 
+  } */
+  
+  .sponsor-logo {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column; 
+  margin-top: 2rem;
+    max-width: 400px; /* Maximum width for each logo */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+    margin: 1rem; /* Spacing between images */
+  }
+  
+  .sponsor-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .sponser-section h1 {
+      font-size: 2rem; /* Smaller heading on mobile */
+    }
+  
+    .sponser-section p {
+      font-size: 1rem; /* Smaller paragraph text */
+    }
+  
+    .sponsor-logos {
+      gap: 2rem; /* Less gap on smaller screens */
+    }
+  
+    .sponsor-logo {
+      max-width: 150px; /* Smaller logos on mobile */
+    }
+  }
+  

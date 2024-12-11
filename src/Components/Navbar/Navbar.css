@@ -1,0 +1,98 @@
+/* General Navbar Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem 2rem;
+    color: black;
+    position: relative;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .nav-left {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff6347; /* Tomato color for hover */
+  }
+  
+  /* Navbar header styles */
+  .nav-right h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .hamburger .line {
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  /* Mobile Navigation Links */
+  .nav-links {
+    display: none;
+    gap: 20px;
+  }
+  
+  /* Dropdown Menu */
+  .nav-links.active {
+    display: flex;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-left {
+      display: none;
+    }
+    
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      padding: 1rem;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 200px;
+      box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-link {
+      font-size: 18px;
+    }
+  }
+  
